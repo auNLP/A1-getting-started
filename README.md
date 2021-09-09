@@ -1,4 +1,4 @@
-[![github actions pytest](https://github.com/auNLP/A1-getting-started/actions/workflows/pytest-cov-comment.yml/badge.svg)](https://github.com/auNLP/A1-getting-started/actions)
+[![github actions pytest](https://github.com/auNLP/A1-getting-started/actions/workflows/pytest.yml/badge.svg)](https://github.com/auNLP/A1-getting-started/actions)
 
 
 # A1: Getting started
@@ -29,17 +29,14 @@ def test_memorize():
     assert acc == 1
 ```
 
-- [ ] generalize it to take an input of `range(n, n+5)` and return n, where n is a whole number between 0 and 
-    - you might need to scale the input
+- [ ] generalize it to take an input of binary and outputs the corresponding digit. Where the possibles inputs is the number between 0 and 1.
 ```
-def test_memorize():
-    sample = random.sample(train_data, k=10)
+def test_binary():
+    train, test = generate_binary()
     network = NeuralNetwork([784, 30, 10])
 
     # train on sample
-
-    # check that classifies all correctly on the same sample
-    assert acc == 1
+    # ...
 ```
 
 - [ ] Test that the networks performance improve over 10 epochs
