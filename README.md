@@ -1,4 +1,3 @@
-[![github actions pytest](https://github.com/auNLP/A1-getting-started/actions/workflows/pytest.yml/badge.svg)](https://github.com/auNLP/A1-getting-started/actions)
 
 
 # Assignment 1: Getting started
