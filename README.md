@@ -5,10 +5,43 @@
 An assignment on getting started with pytesting, Github actions and continuous development.
 
 The requirement for the assignment is submitting a working neural network with test included. The tests should
-- [ ] that it is able to memorize random 10 examples
-- [ ] generalize it to take an input of `range(n, n+5)` and return n, where n is a whole number between 0 and 2
+- [ ] Classify more than 90% of digit correctly in the MNIST database. This should look something like this:
+```
+def test_mnist():
+    network = NeuralNetwork([784, 30, 10])
+    # train and evaluate
+
+    # check that accuracy is above 90%
+    assert test_acc >= 0.90
+
+```
+*Note*: This is dummy code. It displays the intention. Not the exact form.
+
+- [ ] It can memorize random 10 examples. *Note* that while this is not something we want our network to do in general, it simply shows that the network is able to overfit. Assuming that it couldn't with 20k+ parameters there is probably an error in the code.
+```
+def test_memorize():
+    sample = random.sample(train_data, k=10)
+    network = NeuralNetwork([784, 30, 10])
+
+    # train on sample
+
+    # check that classifies all correctly on the same sample
+    assert acc == 1
+```
+
+- [ ] generalize it to take an input of `range(n, n+5)` and return n, where n is a whole number between 0 and 
     - you might need to scale the input
-- [ ] Classify more than 90% of digit correctly in the MNIST database
+```
+def test_memorize():
+    sample = random.sample(train_data, k=10)
+    network = NeuralNetwork([784, 30, 10])
+
+    # train on sample
+
+    # check that classifies all correctly on the same sample
+    assert acc == 1
+```
+
 - [ ] Test that the networks performance improve over 10 epochs
 
 Potentially:
