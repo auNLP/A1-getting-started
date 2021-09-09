@@ -7,6 +7,7 @@ An assignment on getting started with pytesting, Github actions and continuous d
 The requirement for the assignment is submitting a working neural network with test included. The tests should
 - [ ] that it is able to memorize random 10 examples
 - [ ] generalize it to take an input of binary and outputs the corresponding digit. Where the possibles inputs is the number between 0 and 1.
+  - To do this you will need to create a train, test set of training samples
 - [ ] Classify more than 90% of digit correctly in the MNIST database
 - [ ] Test that the networks performance improve over 10 epochs
 
