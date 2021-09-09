@@ -1,4 +1,4 @@
-name: Pytest (MacOS Catalina)
+name: Pytest (Ubuntu)
 
 on:
   push:
